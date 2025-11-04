@@ -7,11 +7,15 @@ import { ActionIcon } from '@mantine/core';
 
 function Header() {
   return (
-    <div className='bg-green-400 w-full h-16'>
-      {/* <ProfileMenu/> */}
-      <ActionIcon variant="outline" aria-label="Settings">
-        <IconLayoutSidebarLeftCollapseFilled style={{ width: '70%', height: '70%' }} stroke={1.5} />
+    <div className='w-full h-16 flex justify-between gap-x-5 items-center bg-backg-950'>
+      
+      <ActionIcon variant="transparent" size="xl" aria-label="Settings">
+        <IconLayoutSidebarLeftCollapseFilled className='text-primary-900' style={{ width: '90%', height: '90%' }} stroke={1.5} />
       </ActionIcon>
+
+      <div>
+        <ProfileMenu/>
+      </div>
     </div>
   )
 }

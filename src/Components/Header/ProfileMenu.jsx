@@ -1,4 +1,4 @@
-import { Menu, Button, Text } from '@mantine/core';
+import { Menu, Button, Text, Avatar } from '@mantine/core';
 import {
   IconSettings,
   IconSearch,
@@ -7,12 +7,16 @@ import {
   IconTrash,
   IconArrowsLeftRight,
 } from '@tabler/icons-react';
+import React from 'react';
 
 const ProfileMenu=()=> {
   return (
     <Menu shadow="md" width={200}>
       <Menu.Target>
-        <Button>Toggle menu</Button>
+        <div className='flex items-center space-x-2 p-2'>
+          <span className='font-medium text-lg text-neutral-200'>Name Name</span>
+          <Avatar radius="xl" size={50 }/>
+        </div>
       </Menu.Target>
 
       <Menu.Dropdown>
